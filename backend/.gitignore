@@ -1,0 +1,40 @@
+# Virtual Environment/myenv/
+
+/myenv/
+/__pycache__/
+
+*.pyc
+
+# Python Cache.DS_Store
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Temporary outputs
+output/
+temp/
+*.tmp
+
+# Test files
+debug_*.py
+*_debug.py
+
+# Temporary results (keep final_results as example)
+results.json
+simple_results.json

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OCR Result</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mvp.css/1.12.0/mvp.css" />
+  <style>
+    pre { white-space: pre-wrap; word-wrap: break-word; }
+    .downloads a { margin-right: 1rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>OCR Result</h1>
+    <p>Run ID: {{ run_id }}</p>
+    <p><a href="/">&#8592; Back</a></p>
+  </header>
+  <main>
+    <section>
+      <h2>Structured JSON</h2>
+      <pre>{{ data_json }}</pre>
+    </section>
+    <section class="downloads">
+      <h2>Downloads</h2>
+      <ul>
+        <li><a href="/download/{{ run_id }}/marks_card_structured.json">marks_card_structured.json</a></li>
+        <li><a href="/download/{{ run_id }}/extracted_text.csv">extracted_text.csv</a></li>
+        <li><a href="/download/{{ run_id }}/subjects.csv">subjects.csv</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <small>Powered by PaddleOCR + OpenCV + Flask</small>
+  </footer>
+</body>
+</html>

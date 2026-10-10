@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Marks Card OCR</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mvp.css/1.12.0/mvp.css" />
+</head>
+<body>
+  <header>
+    <h1>Marks Card OCR</h1>
+    <p>Upload a marks card image to extract all fields using PaddleOCR + OpenCV</p>
+  </header>
+  <main>
+    <section>
+      <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="file">Choose an image file</label>
+        <input id="file" name="file" type="file" accept=".png,.jpg,.jpeg,.bmp,.tif,.tiff,.pdf" required />
+        <button type="submit">Upload & Extract</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <small>Powered by PaddleOCR + OpenCV + Flask</small>
+  </footer>
+</body>
+</html>

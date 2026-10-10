@@ -1,0 +1,24 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+djangorestframework = "*"
+django-cors-headers = "*"
+python-dotenv = "*"
+djangorestframework-simplejwt = "*"
+pillow = "*"
+pypdf2 = "*"
+iota-sdk = "*"
+drf-spectacular = "*"
+
+[dev-packages]
+pytest = "*"
+pytest-django = "*"
+black = "*"
+flake8 = "*"
+
+[requires]
+python_version = "3.12"
